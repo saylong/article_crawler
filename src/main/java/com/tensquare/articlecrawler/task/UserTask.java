@@ -32,7 +32,12 @@ public class UserTask {
      * 抓取AI频道的文章数据
      */
 //    @Scheduled(cron = "0 0 0 * * ?")//每天0点0分0秒执行一次
-    @Scheduled(cron = "0 14 14 * * ?")//每间隔一个小时执行一次
+    @Scheduled(
+            //首次执行等待5秒
+            initialDelay = 5000
+            //任务执行完成后等待的时间,这里1小时
+            ,fixedDelay = 1000*60*60
+    )
     public void userTask(){
         System.out.println("开始爬取用户信息......");
 

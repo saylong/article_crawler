@@ -29,7 +29,7 @@ public class DownloadUtil {
         if (!file.exists()) {
             file.mkdirs();
         }
-        OutputStream out = new FileOutputStream(file.getPath() + "\\" + filename);
+        OutputStream out = new FileOutputStream(file.getPath() + "\\" + filename + ".jpg");
 
         //缓冲数据
         byte[] bytes = new byte[1024];

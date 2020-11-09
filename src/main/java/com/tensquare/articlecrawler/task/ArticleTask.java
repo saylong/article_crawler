@@ -30,8 +30,8 @@ public class ArticleTask {
 /*    @Scheduled(
             //首次执行等待5秒
             initialDelay = 5000
-            //任务执行完成后等待的时间,这里1分钟
-            ,fixedDelay = 1000*60
+            //任务执行完成后等待的时间,这里1小时
+            ,fixedDelay = 1000*60*60
     )*/
     public void aiTask(){
         //创建爬虫
